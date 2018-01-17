@@ -82,7 +82,7 @@ public class BinanceTrader {
               // nothing happened here, maybe cancel as well?
               panicBuyCounter++;
               logger.info(String.format("order still new, time %d\n", panicBuyCounter));
-              if (panicBuyCounter > 4) {
+              if (panicBuyCounter > 15) {
                 client.cancelOrder(orderId);
                 clear();
               }
@@ -110,7 +110,7 @@ public class BinanceTrader {
           } else {
             panicSellCounter++;
             logger.info(String.format("sell request not successful, increasing time %d\n", panicSellCounter));
-            panicSellForCondition(lastPrice, lastKnownTradingBalance, panicSellCounter > 10);
+            panicSellForCondition(lastPrice, lastKnownTradingBalance, panicSellCounter > 30);
           }
         } else {
           logger.warn("Order was canceled, cleaning up.");
