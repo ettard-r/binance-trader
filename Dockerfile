@@ -1,6 +1,3 @@
-FROM maven:3.3-jdk-8
-RUN mkdir /work
-RUN chmod 777 work
-ADD . /work
-WORKDIR /work
-RUN mvn clean spring-boot:run
+FROM maven:3-jdk-8
+ADD target/binancebot-0.0.1-SNAPSHOT.jar /app.jar
+CMD java -jar /app.jar
