@@ -51,8 +51,8 @@ public class BinanceBotApplication {
     trader = new BinanceTrader(tradeDifference, tradeProfit, tradeAmount, baseCurrency, tradeCurrency, apiKey, apiSecret);
   }
 
-  // tick every 2 seconds
-  @Scheduled(fixedRate = 2000)
+  // tick every 3 seconds
+  @Scheduled(fixedRate = 3000)
   public void schedule() {
     trader.tick();
   }
