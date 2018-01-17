@@ -3,4 +3,4 @@ RUN mkdir /work
 RUN chmod 777 work
 ADD . /work
 WORKDIR /work
-RUN mvn spring-boot:run
+RUN mvn clean spring-boot:run
