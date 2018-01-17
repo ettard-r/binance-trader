@@ -1,4 +1,4 @@
-FROM mvn:3-jdk-8
+FROM mvn
 RUN mkdir /work
 ADD . /work
 WORKDIR /work
