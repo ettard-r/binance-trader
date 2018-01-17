@@ -21,3 +21,11 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-archiver/pom.properties
+target/classes/io/github/unterstein/TradingClient.class
+target/classes/io/github/unterstein/BinanceTrader.class
+target/classes/io/github/unterstein/BinanceBotApplication.class
+target/classes/application.properties
+target/binancebot-0.0.1-SNAPSHOT.jar.original
